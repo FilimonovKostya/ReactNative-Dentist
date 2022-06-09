@@ -1,9 +1,10 @@
-import {Button, StyleSheet, Text, View} from "react-native";
+import {Button, Text, View} from "react-native";
+import {HomeScreeProps} from "./navigationTypes";
 
 
-const Main = ({route, navigation}:any) => {
+const Main = ({route, navigation}: HomeScreeProps) => {
     return (
-        <View style={{flex: 1, justifyContent:'center', alignItems:'center'}}>
+        <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
             <Text>HOme</Text>
             <Button title={'Jump to Users Screen'} onPress={() => navigation.navigate('Users')}/>
         </View>

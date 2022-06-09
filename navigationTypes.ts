@@ -1,7 +1,11 @@
 import {NativeStackScreenProps} from "@react-navigation/native-stack";
 
 export type RootStackParamList = {
-    Home: undefined
+    Home: {
+        id: number,
+        name: string,
+        isMarried: boolean
+    }
     Users: undefined
 };
 

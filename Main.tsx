@@ -1,21 +1,14 @@
-import {StyleSheet, Text, View} from "react-native";
+import {Button, StyleSheet, Text, View} from "react-native";
 
 
-const Main = () => {
+const Main = ({route, navigation}:any) => {
     return (
-        <View style={styles.container}>
-            <Text>Open up App.tsx to start working on your app!</Text>
+        <View style={{flex: 1, justifyContent:'center', alignItems:'center'}}>
+            <Text>HOme</Text>
+            <Button title={'Jump to Users Screen'} onPress={() => navigation.navigate('Users')}/>
         </View>
     )
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#e5b2b2',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-});
 
 export default Main

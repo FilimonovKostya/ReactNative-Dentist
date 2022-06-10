@@ -1,6 +1,7 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 const InfoItem = () => {
+
   return (
     <View style={styles.container}>
       <Image style={styles.avatar} source={require('./../assets/women1.jpeg')} />
@@ -8,7 +9,7 @@ const InfoItem = () => {
         <Text style={styles.heading}>Julia Olsen</Text>
         <Text style={styles.subtitle}>Pulpit, remove tooth</Text>
       </View>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={true ? styles.button : {...styles.button, backgroundColor:'#6dbcf5'}}>
         <Text style={styles.textButton}>12:30</Text>
       </TouchableOpacity>
     </View>

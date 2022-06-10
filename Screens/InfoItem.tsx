@@ -1,4 +1,4 @@
-import { Button, Image, StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 const InfoItem = () => {
   return (
@@ -8,7 +8,9 @@ const InfoItem = () => {
         <Text style={styles.heading}>Julia Olsen</Text>
         <Text style={styles.subtitle}>Pulpit, remove tooth</Text>
       </View>
-      <Button title={'12:30'}/>
+      <TouchableOpacity style={styles.button}>
+        <Text style={styles.textButton}>12:30</Text>
+      </TouchableOpacity>
     </View>
   )
 }
@@ -17,10 +19,10 @@ const styles = StyleSheet.create({
   container: {
     marginTop: 10,
     flexDirection: 'row',
-    alignItems:'center'
+    alignItems: 'center',
   },
   infoText: {
-    flex:1,
+    flex: 1,
     paddingHorizontal: 13,
     justifyContent: 'center',
   },
@@ -32,12 +34,23 @@ const styles = StyleSheet.create({
   heading: {
     fontSize: 18,
     letterSpacing: 1,
-    marginBottom:3,
+    marginBottom: 3,
   },
   subtitle: {
     fontSize: 14,
     fontWeight: '100',
   },
+  button:{
+    backgroundColor:'#2979ff',
+    paddingVertical:7,
+    paddingHorizontal:10,
+    borderRadius: 50,
+  },
+  textButton:{
+    color:'white',
+    fontSize:16,
+    fontWeight: 'bold'
+  }
 })
 
 

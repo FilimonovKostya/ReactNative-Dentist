@@ -1,9 +1,9 @@
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { Image, StyleSheet, Text, TouchableOpacity, View, TouchableHighlight } from 'react-native'
 
 const InfoItem = () => {
 
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container}>
       <Image style={styles.avatar} source={require('./../assets/women1.jpeg')} />
       <View style={styles.infoText}>
         <Text style={styles.heading}>Julia Olsen</Text>
@@ -12,7 +12,7 @@ const InfoItem = () => {
       <TouchableOpacity style={true ? styles.button : {...styles.button, backgroundColor:'#6dbcf5'}}>
         <Text style={styles.textButton}>12:30</Text>
       </TouchableOpacity>
-    </View>
+    </TouchableOpacity>
   )
 }
 
@@ -21,6 +21,9 @@ const styles = StyleSheet.create({
     marginTop: 10,
     flexDirection: 'row',
     alignItems: 'center',
+    paddingBottom:10,
+    borderBottomWidth: 2,
+    borderBottomColor: '#e3e2e2'
   },
   infoText: {
     flex: 1,

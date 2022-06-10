@@ -1,11 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native'
 import InfoItem from './Screens/InfoItem'
+import AddButton from './components/AddButton'
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>11 September</Text>
       <InfoItem />
+      <AddButton />
     </View>
   )
 }

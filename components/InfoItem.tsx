@@ -1,15 +1,14 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View, TouchableHighlight } from 'react-native'
 
 const InfoItem = () => {
-
   return (
     <TouchableOpacity style={styles.container}>
-      <Image style={styles.avatar} source={require('./../assets/women1.jpeg')} />
+      <Image style={styles.avatar} source={require('../assets/women1.jpeg')} />
       <View style={styles.infoText}>
         <Text style={styles.heading}>Julia Olsen</Text>
         <Text style={styles.subtitle}>Pulpit, remove tooth</Text>
       </View>
-      <TouchableOpacity style={true ? styles.button : {...styles.button, backgroundColor:'#6dbcf5'}}>
+      <TouchableOpacity style={true ? styles.button : { ...styles.button, backgroundColor: '#6dbcf5' }}>
         <Text style={styles.textButton}>12:30</Text>
       </TouchableOpacity>
     </TouchableOpacity>
@@ -21,9 +20,9 @@ const styles = StyleSheet.create({
     marginTop: 10,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingBottom:10,
+    paddingBottom: 10,
     borderBottomWidth: 2,
-    borderBottomColor: '#e3e2e2'
+    borderBottomColor: '#e3e2e2',
   },
   infoText: {
     flex: 1,
@@ -44,18 +43,17 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '100',
   },
-  button:{
-    backgroundColor:'#2979ff',
-    paddingVertical:7,
-    paddingHorizontal:10,
+  button: {
+    backgroundColor: '#2979ff',
+    paddingVertical: 7,
+    paddingHorizontal: 10,
     borderRadius: 50,
   },
-  textButton:{
-    color:'white',
-    fontSize:16,
-    fontWeight: 'bold'
-  }
+  textButton: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
 })
 
-
-export default InfoItem;
+export default InfoItem

@@ -20,8 +20,8 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 65 / 2
+    borderRadius: 65 / 2,
   },
 })
 
-export default AddButton;
+export default AddButton
